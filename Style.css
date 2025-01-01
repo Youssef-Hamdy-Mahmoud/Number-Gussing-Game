@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+    padding: 50px 40px; 
+    width: 380px; 
+    text-align: center;
+    transition: all 0.3s ease; 
+}
+
+.game-container:hover {
+    transform: translateY(-10px); 
+}
+
+/* Input Field Styling */
+input {
+    padding: 15px;
+    font-size: 18px;
+    width: 85%;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(72, 189, 68, 0.5); 
+}
+
+/* Button Styling */
+button {
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; 
+    background-color: #4CAF50;
+    color: white;
+    width: 90%;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600; 
+}
+
+button:hover {
+    background-color: #388E3C;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+}
+
+#feedback {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 25px;
+}
+
+
+#history {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #444;
+}
+
+#guessList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#guessList li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+#gameOver {
+    font-size: 22px;
+    color: red;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+
+@media (max-width: 480px) {
+    .game-container {
+        width: 90%;
+        padding: 25px 20px; 
+    }
+
+    input, button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #feedback {
+        font-size: 20px;
+    }
+
+    #gameOver {
+        font-size: 20px;
+    }
+}
